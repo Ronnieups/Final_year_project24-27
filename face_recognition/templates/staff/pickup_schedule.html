@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %}Pickup Schedule{% endblock %}
+
+{% block content %}
+<h2>Pickup Schedule</h2>
+<ul>
+    {% for schedule in pickup_schedule %}
+    <li>{{ schedule.child.name }} - {{ schedule.pickup_time }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}

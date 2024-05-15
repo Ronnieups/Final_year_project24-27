@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %}Dashboard{% endblock %}
+
+{% block content %}
+<h2>Dashboard</h2>
+<div class="links">
+    <a href="{% url 'register_pickup_person' %}">Register Pickup Person</a>
+    <a href="{% url 'register_face' %}">Register Face</a>
+    <a href="{% url 'pickup_schedule' %}">View Pickup Schedule</a>
+</div>
+{% endblock %}
